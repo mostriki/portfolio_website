@@ -1,7 +1,26 @@
 <h1>Blog</h1>
 
+
 <ul>
-  <% @blogs.each do |blog| %>
-    <li><%= link_to blog.name, blog_path(blog) %></li>
-  <% end %>
+  <% @blogs.all %>
 </ul>
+
+<% if @blogs.any? %>
+  <h4>Here are the three most recent blogs:</h4>
+
+  <ul class="list-unstyled">
+    <% @blogs.top_five_most_recent.each do |blog| %>
+      <br>
+      <br>
+      <li><h3><%= link_to blog.title, blog_path(blog) %></h3></li>
+      <li><h6><%= blog.header %><h6></li>
+      <hr>
+      <li><%= blog.body %></li>
+      <br>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no articles yet!</p>
+<% end %>
+  <br>
+  <h5><%= link_to "Create a new blog entry", new_blog_path %></h5>
