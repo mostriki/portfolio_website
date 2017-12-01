@@ -1,0 +1,17 @@
+<h1><%= @blog.name %></h1>
+
+<% if @blog.reviews.any? %>
+  <h4>Welcome to my blog:</h4>
+
+  <ul class="list-unstyled">
+    <% @blog.each do |review| %>
+      <li>
+        <%= review.author %> <%= review.rating %> <%= review.content %> |
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no reviews yet!</p>
+<% end %>
+
+<p><%= link_to "Return to blogs", blog_path %></p>
