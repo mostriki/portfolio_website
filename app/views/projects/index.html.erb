@@ -1,0 +1,17 @@
+<h1>Projects</h1>
+
+<% if @projects.any? %>
+  <h4>Here are 10 of our projects:</h4>
+
+  <ul class="list-unstyled">
+    <% @projects.each do |project| %>
+      <li><%= link_to project.title, project_path(project) %><%= project.header %><%= project.url %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no projects yet!</p>
+<% end %>
+
+
+
+<%= link_to "Create", new_project_path %>
