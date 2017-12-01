@@ -1,17 +1,35 @@
 <h1>Projects</h1>
 
+
+<ul>
+  <% @projects.all %>
+</ul>
+
 <% if @projects.any? %>
-  <h4>Here are 10 of our projects:</h4>
+  <h4>Here are 6 projects:</h4>
 
-  <ul class="list-unstyled">
-    <% @projects.top_six_most_recent do |project| %>
-      <li><%= link_to project.title, project_path(project) %><%= project.header %><%= project.url %></li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>There are no projects yet!</p>
-<% end %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Header</th>
+        <th>URL Address</th>
+      </tr>
+    </thead>
 
-
-
-<%= link_to "Create", new_project_path %>
+    <tbody>
+      <% @projects.top_six_most_recent.each do |project| %>
+        <tr>
+          <td><%= link_to project.title, project_path(project) %></td>
+          <td><%= project.header %></td>
+          <td><%= project.url %></td>
+        </tr>
+        <% end %>
+      </ul>
+      <% else %>
+        <p>There are no projects!</p>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+<%= link_to "Create a new Project", new_project_path %>
