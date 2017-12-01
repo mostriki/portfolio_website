@@ -34,7 +34,6 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap'
-gem 'bootstrap'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 
