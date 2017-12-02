@@ -7,6 +7,10 @@ class PagesController < ApplicationController
 
   end
 
+  def blog
+
+  end
+
   def contact
 
   end
