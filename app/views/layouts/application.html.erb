@@ -11,10 +11,14 @@
   <body>
 
     <div class="container">
+      <%= render "shared/nav" %>
+
       <%= flash[:alert] %>
       <%= flash[:notice] %>
-      
+
       <%= yield %>
+
+      <%= render "shared/footer" %>
     </div>
   </body>
 </html>
