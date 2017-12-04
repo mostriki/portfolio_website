@@ -6,18 +6,24 @@
 
 ### Description
 
-_..._
+_For this independent project I wanted to create a portfolio website to showcase the skills I have learned during my time at Epicodus. The primary goal is to utilize user authentication in order to protect my blog section. For the first day, I set out to get primary frame and routes of my application established and workable. Next I would like to ensure that I have thorough test coverage, styling, images, and a fully functioning blog that i can update on a regular basis._
 
-![description](image.file)
+### Strengths
 
-### User Stories
-
-* _..._
-
+* _I have a wide array of jobs and life experiences to draw from, including 7 years of professional Office Management and Marketing experience at a tech company._
+* _I have strong leadership experience. I graduated from the United States Marine's Platoon Leadership course as a civilian in college. Even though I turned down my commission, it was a transformative experience and a testament to my abilities._
+* _I studied art from a young age and have an artistic sensibility that lends positively to my application design._
+* _I know how to follow. I am great in team environments and love to contribute in such a way that I can empower my teammates to exceed their own expectations._
+* _I have strong soft skills. My personality and my years of professional marketing and management experience have trained me how to engage other people in a wide variety of situations._
+* _I am great at organizing events and environments. I plan regular backpacking trips with my friends, sometimes in large groups and I am usually the one responsible for coordination and delegation of supplies._
 
 ### Further Exploration
 
-* _..._
+* _FactoryBot for testing._
+* _Paperclip for images._
+* _Mailgun for sending automated emails responses._
+* _Rails Admin to differentiate between a user and an admin._
+* _A simple search query for my blog_
 
 ### Technologies Used
 
